@@ -13,5 +13,6 @@ int main(){
 
     area = 0.5*l*h;
     printf("The area is %lf\n",area);
+    
     return 0;
 }
