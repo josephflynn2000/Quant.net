@@ -8,19 +8,28 @@ int main(){
     int character = 0;
     int newline = 0;
 
+    //works till EOF is detected
     do{
-    x = getchar();
+        //get character
+        x = getchar();
 
-    if(x == '\n'){
-        newline++;
-    }
+        //counts newline when newline character is entered
+        if(x == '\n'){
+            newline++;
+        }
 
-    if(previous != ' ' && (x == ' ' || x == '\n')){
-        word++;
-    }
+        //counts word when previous character is a whitespace/newline 
+        //and last character wasn't a whitespace
+        if(previous != ' ' && (x == ' ' || x == '\n')){
+            word++;
+        }
 
-    character++;
-    previous = x;
+        //counts all characters
+        character++;
+
+        //saves last character
+        previous = x;
+
     }while((int)x != EOF);
 
     printf("words: %i\nchar: %i\nlines: %i\n",word,character,newline);
