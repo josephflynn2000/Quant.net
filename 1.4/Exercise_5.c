@@ -7,7 +7,7 @@ int main(){
 
     printf("|%s||%s|\n------------------------\n","   Clesius","Fahrenheit");
 
-    for(int i = start; i<=end; i+=step){
+    for(int i = start; i <= end; i += step){
 
         //F to C
         float f = ((9.0/5.0)*i)+32;
