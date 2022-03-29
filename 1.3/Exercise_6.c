@@ -1,9 +1,11 @@
 #include <stdio.h>
 
 int main(){
+    //initialized variable
     int x;
 
-    printf("Enter a integear: ");
+    //input integer (integer data type)
+    printf("Enter an integer: ");
     scanf("%i", &x);
 
     //allows first bit to be shifted right
