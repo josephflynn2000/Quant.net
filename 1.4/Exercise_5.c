@@ -1,12 +1,15 @@
 #include <stdio.h>
 
 int main(){
+    //initialized variables
     int start = 0;
     int end = 19;
     int step = 1;
 
+    //prints header
     printf("|%s||%s|\n------------------------\n","   Clesius","Fahrenheit");
 
+    //loop that ends when start > end
     for(int i = start; i <= end; i += step){
 
         //F to C

@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int main(){
+    //initialized variables
     char x;
     char previous;
 
@@ -11,6 +12,7 @@ int main(){
 
     //loop continues till EOF is detected
     while((int)x != EOF){
+
         //get character
         x = getchar();
 
@@ -25,7 +27,7 @@ int main(){
             word++;
         }
 
-        //counts all characters ()
+        //counts all characters
         character++;
 
         //saves last character

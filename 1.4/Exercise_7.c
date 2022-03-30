@@ -1,10 +1,5 @@
 #include <stdio.h>
 
-//Homework wants the program to be named freq.c (frequency)
-//I named it exrecise 6 and refuse to rename it
-
-//Program also uses text file. Doesn't specify if this can be used.
-
 int main(){
     //initialized variables (File and character data type)
     FILE *fp;
@@ -60,8 +55,27 @@ int main(){
         }
     }   
 
-    //prints out results
-    printf("Count of 0: %i\nCount of 1: %i\nCount of 2: %i\nCount of 3: %i\nCount of 4: %i\nCount of other: %i\n", total_0, total_1, total_2, total_3, total_4, other);
+    //prints out results from 0 to 2
+    printf("Count of 0: %i\nCount of 1: %i\nCount of 2: %i\n", total_0, total_1, total_2);
+
+    //prints out results for 3
+    switch(total_3){
+        case 0:
+            printf("Number three appears zero times.\n");
+            break;
+        case 1:
+            printf("Number three appears one time.\n");
+            break;
+        case 2:
+            printf("Number three appears two times.\n");
+            break;
+        default:
+            printf("The number three appears more than two times.\n");
+            break;
+    }
+
+    //prints out results from 4 to other
+    printf("Count of 4: %i\nCount of other: %i\n", total_4, other);
     
     //removes text file that was created earlier
     remove("file.txt");
